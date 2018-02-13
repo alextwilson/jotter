@@ -12,6 +12,12 @@ var assert = {
             // throw new Error("Not Equal: " + assertionToCheck + " is not " + textToCheck + ".")
             return("Not Equal: " + assertionToCheck + " is not " + textToCheck + ".")
         }
-    }
+    },
+
+    isEmpty: function(list) {
+        if (list.length === 0 ) {
+            return(list + "is empty.")
+        }
+    },
 
   };
