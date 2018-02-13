@@ -1,10 +1,10 @@
 {
-    "name" : "note-app",
-    "version" : "0.0.1",
-    "scripts" : {
-      "start" : "node src/js/server.js"
-    },
-    "dependencies" : {
-      "express" : "latest"
-    }
+  "name": "note-app",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "http-server": "latest"
   }
+}
