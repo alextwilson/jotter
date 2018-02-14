@@ -1,10 +1,12 @@
 function Note(){
     this.fullText = "";
+    
 }
 
 Note.prototype.createNote = function(text){
     this.fullText = text;
     this.abbreviatedText = this._abbreviateText(text);
+
 }
 
 Note.prototype.returnText = function(){

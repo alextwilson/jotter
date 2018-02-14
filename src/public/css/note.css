@@ -1,0 +1,15 @@
+html {
+    background-color: #7bacd4;
+}
+
+h3 {
+    font-family: sans-serif;
+    font-style: oblique;
+  }
+
+input[type=submit] {
+    width: 230px;
+    height: 40px;
+    font-size: 30px;
+    border-radius: 10px;
+  }
