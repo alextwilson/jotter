@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Note App</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/note.css" />
-    <h3>Welcome !!</h3>
-    <script src="../js/note.js"></script> 
-    <script src="../js/jotter.js"></script>
-    <script src="../js/interface.js"></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Note App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/note.css" />
+  <h3>Welcome !!</h3>
+  <script src="./js/note.js"></script>
+  <script src="./js/jotter.js"></script>
+  <script src="./js/interface.js"></script>
 </head>
-<body>
-        <form >
-                <label for="note">
-                    <h3>Note </h3>
-                </label><br><br>
-                <textarea id="note" cols="50" rows="10"></textarea><br><br>
-                <input type="button" value="Create" id="noteSubmit" >
-            </form>
+  <body>
+    <form>
+      <label for="note">
+        <h3>Note </h3>
+      </label><br><br>
+      <textarea id="note" cols="50" rows="10"></textarea><br><br>
+      <input type="button" value="Create" id="noteSubmit" >
+    </form>
+    <ol id="all notes">No notes!</ol>
 </body>
 </html>
