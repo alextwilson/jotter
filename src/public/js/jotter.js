@@ -1,0 +1,6 @@
+function Jotter(){
+    this.displayList = [];
+}
+
+
+
