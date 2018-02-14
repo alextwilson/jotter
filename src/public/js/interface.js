@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function(){
     var notes = list.displayList;
     var result = ""
     for (var i = 0; i < notes.length; i++) {
-      result = result + " <a href='" + notes[i].abbreviatedText + "'>"+ notes[i].abbreviatedText + "</a><br>";
+      result = result + " <a href='" + notes[i].abbreviatedText + "'>"+ notes[i].abbreviatedText + "...</a><br>";
     };
     document.getElementById('all notes').innerHTML = result;
   };
