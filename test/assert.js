@@ -84,10 +84,10 @@ var assert = {
   },
 
 	notIncludeObject: function(assertionToCheck, objectToCheck) {
-    if (assertionToCheck.includes(objectToCheck)){
-      return("Fail: " + objectToCheck.constructor.name + " is in " + assertionToCheck.constructor.name);
+    if (!assertionToCheck.includes(objectToCheck)){
+      return("Pass: " + objectToCheck.constructor.name + " is not in " + assertionToCheck.constructor.name);
     } else {
-			return("Pass: " + objectToCheck.constructor.name + " is not in " + assertionToCheck.constructor.name);
+			return("Fail: " + objectToCheck.constructor.name + " is in " + assertionToCheck.constructor.name);
 		}
   },
 };
