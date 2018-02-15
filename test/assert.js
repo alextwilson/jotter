@@ -8,7 +8,7 @@ var it = function(description, testFunction) {
 		console.log(description);
 		testFunction();
 	} catch(err) {
-		console.error(message); // provides red errormessage
+		console.error(err); // provides red errormessage
 		console.log("Failure");
 	}
 };
@@ -83,7 +83,7 @@ var assert = {
 		}
   },
 
-	notIncludeObject: function(assertionToCheck, objectToCheck) {
+	notIncludesObject: function(assertionToCheck, objectToCheck) {
     if (!assertionToCheck.includes(objectToCheck)){
       return("Pass: " + objectToCheck.constructor.name + " is not in " + assertionToCheck.constructor.name);
     } else {

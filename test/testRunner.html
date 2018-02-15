@@ -1,18 +1,58 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
     <title>Jotter Tests</title>
     <script src="assert.js"></script>
+    <script src="webMethods.js"></script> -->
+
+		<!-- include source files here... -->
+    <!-- <script src="../src/public/js/jotter.js"></script>
+    <script src="../src/public/js/note.js"></script>
+    <script src="../src/public/js/interface.js"></script> -->
+    
+		<!-- include spec files here... -->
+		<!-- <script src="noteTest.js"></script>
+    <script src="jotterTest.js"></script>
+    <script src="./Feature/jotterTest.js"></script>
+</head>
+<body>
+
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Note App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="../src/public/css/note.css" />
+  <h3 id="welcome">Welcome !!</h3>
+  <script src="assert.js"></script>
+    <script src="webMethods.js"></script>
 
 		<!-- include source files here... -->
     <script src="../src/public/js/jotter.js"></script>
     <script src="../src/public/js/note.js"></script>
-
+    <script src="../src/public/js/interface.js"></script>
+    
 		<!-- include spec files here... -->
 		<script src="noteTest.js"></script>
     <script src="jotterTest.js"></script>
+    <script src="./Feature/jotterTest.js"></script>
+  
 </head>
-<body>
-
+  <body>
+    <form>
+      <label for="note">
+        <h3>Note </h3>
+      </label><br><br>
+      <textarea id="note" cols="50" rows="10"></textarea><br><br>
+      <input type="button" value="Create" id="noteSubmit" >
+    </form>
+  <ol id="allNotes">No notes!</ol>
 </body>
 </html>
