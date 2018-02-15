@@ -56,21 +56,21 @@ var assert = {
   },
 
 	isEmptyArray: function(assertionToCheck) {
-    if (typeof assertionToCheck === "object" && assertionToCheck.length === 0) {
+    if (assertionToCheck.constructor.name === "Array" && assertionToCheck.length === 0) {
       return ("Pass: is an empty array.");
-    } else if (typeof assertionToCheck != "object") {
+    } else if (assertionToCheck.constructor.name != "Array") {
     	return ("Fail: is not an array");
-    } else if (typeof assertionToCheck === "object" && assertionToCheck.length != 0) {
+    } else if (assertionToCheck.constructor.name === "Array" && assertionToCheck.length != 0) {
 			return ("Fail: array is not empty");
 		}
   },
 
   isNotEmptyArray: function(assertionToCheck) {
-    if (typeof assertionToCheck === "object" && assertionToCheck.length >= 1) {
+    if (assertionToCheck.constructor.name === "Array" && assertionToCheck.length >= 1) {
       return("Pass: is an array which is not empty.")
-    } else if (typeof assertionToCheck != "object") {
+    } else if (assertionToCheck.constructor.name != "Array") {
     	return ("Fail: is not an array");
-    } else if (typeof assertionToCheck === "object" && assertionToCheck.length === 0) {
+    } else if (assertionToCheck.constructor.name === "Array" && assertionToCheck.length === 0) {
 			return ("Fail: array is empty");
 		}
   },
