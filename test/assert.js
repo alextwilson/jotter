@@ -25,8 +25,8 @@ var assert = {
 
   isEqual: function(assertionToCheck, textToCheck) {
     if(assertionToCheck === textToCheck){
-    return("Pass: " + assertionToCheck + " is " + textToCheck);
-      } else {
+      return("Pass: " + assertionToCheck + " is " + textToCheck);
+    } else {
 			return("Fail: " + assertionToCheck + " is not " + textToCheck);
 		}
   },
@@ -35,7 +35,7 @@ var assert = {
     if(assertionToCheck !== textToCheck){
       return("Pass: " + assertionToCheck + " is not " + textToCheck);
     } else {
-				eturn("Fail: " + assertionToCheck + " is " + textToCheck);
+			return("Fail: " + assertionToCheck + " is " + textToCheck);
 		}
   },
 
@@ -80,6 +80,14 @@ var assert = {
       return("Pass: " + objectToCheck.constructor.name + " is in " + assertionToCheck.constructor.name);
     } else {
 			return("Fail: " + objectToCheck.constructor.name + " is not in " + assertionToCheck.constructor.name);
+		}
+  },
+
+	notIncludeObject: function(assertionToCheck, objectToCheck) {
+    if (assertionToCheck.includes(objectToCheck)){
+      return("Fail: " + objectToCheck.constructor.name + " is in " + assertionToCheck.constructor.name);
+    } else {
+			return("Pass: " + objectToCheck.constructor.name + " is not in " + assertionToCheck.constructor.name);
 		}
   },
 };
