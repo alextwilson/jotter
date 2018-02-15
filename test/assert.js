@@ -38,8 +38,5 @@ var assert = {
         if (element.length === 0 ) {
             return("It is empty.");
         }
-    }
-
-
-
+    },
   };
