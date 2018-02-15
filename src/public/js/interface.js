@@ -13,8 +13,18 @@ document.addEventListener("DOMContentLoaded", function(){
     var notes = list.displayList;
     var result = ""
     for (var i = 0; i < notes.length; i++) {
-      result = result + " <a href='" + notes[i].abbreviatedText + "'>"+ notes[i].abbreviatedText + "...</a><br>";
+      result += notes[i].abbreviatedText + "...<button id="+ i +">View note</button><br>";
     };
     document.getElementById('all notes').innerHTML = result;
+    addEvent();
+  };
+
+  function addEvent() {
+    var buttons = document.getElementsByTagName("button");
+    for (i = 0; i < buttons.length; i++) {
+      buttons[i].addEventListener("click", function() {
+        alert(list.displayList[this.id].fullText);
+      });
+    };
   };
 });
