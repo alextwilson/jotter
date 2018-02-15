@@ -11,13 +11,13 @@ document.addEventListener("DOMContentLoaded", function(){
 
   function refreshList() {
     var notes = list.displayList;
-    var result = ""
+    var result = "";
     for (var i = 0; i < notes.length; i++) {
       result += "<a id='"+ i +"' href='" + i + "'>"+ notes[i].abbreviatedText + "</a>...<br>";
-    };
+    }
     document.getElementById('allNotes').innerHTML = result;
     addEvent();
-  };
+  }
 
   function addEvent() {
     var links = document.getElementsByTagName("a");
@@ -29,6 +29,6 @@ document.addEventListener("DOMContentLoaded", function(){
           refreshList();
         });
       });
-    };
-  };
+    }
+  }
 });

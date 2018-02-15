@@ -14,6 +14,6 @@ describe("Note",function(){
         note.createNote('Hello my name is Reena, I like talk alot.');
         console.log(assert.isEqual(note.returnText(), 'Hello my name is Reena, I like talk alot.'));
         console.log(assert.isEqual(note.returnAbbreviatedText(), 'Hello my name is Ree'));
-    })
+    });
 });
 
