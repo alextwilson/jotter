@@ -41,9 +41,9 @@ var assert = {
 
   isEmpty: function(assertionToCheck) {
     if (assertionToCheck.length === 0 ) {
-      return("Pass: " + assertionToCheck + " is empty");
+      return("Pass: " + assertionToCheck.constructor.name + " is empty");
     } else {
-			return("Fail: " + assertionToCheck + " is not empty");
+			return("Fail: " + assertionToCheck.constructor.name + " is not empty");
 		}
   },
 
