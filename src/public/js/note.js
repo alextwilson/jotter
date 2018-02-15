@@ -1,5 +1,6 @@
 function Note(){
   this.fullText = "";
+  this.abbreviatedText = "";
 
 }
 
@@ -12,6 +13,11 @@ Note.prototype.createNote = function(text){
 Note.prototype.returnText = function(){
   return this.fullText;
 }
+
+Note.prototype.returnAbbreviatedText = function(){
+  return this.abbreviatedText;
+}
+
 
 Note.prototype._abbreviateText = function(text){
   return text.substring(0,20);
