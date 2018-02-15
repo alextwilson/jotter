@@ -50,4 +50,3 @@ describe("Testing the Jotter object.", function(){
 		
 
 });
-
