@@ -13,9 +13,9 @@ document.addEventListener("DOMContentLoaded", function(){
     var notes = list.displayList;
     var result = ""
     for (var i = 0; i < notes.length; i++) {
-      result += "<a id='"+ i +"' href='" + notes[i].abbreviatedText + "'>"+ notes[i].abbreviatedText + "</a>...<br>";
+      result += "<a id='"+ i +"' href='" + i + "'>"+ notes[i].abbreviatedText + "</a>...<br>";
     };
-    document.getElementById('all notes').innerHTML = result;
+    document.getElementById('allNotes').innerHTML = result;
     addEvent();
   };
 
@@ -24,7 +24,10 @@ document.addEventListener("DOMContentLoaded", function(){
     for (i = 0; i < links.length; i++) {
       links[i].addEventListener("click", function() {
         event.preventDefault();
-        alert(list.displayList[this.id].fullText);
+        document.getElementById('allNotes').innerHTML = list.displayList[this.id].fullText + "<br> <button id='ok'>OK</button>";
+        document.getElementById("ok").addEventListener("click", function() {
+          refreshList();
+        });
       });
     };
   };
