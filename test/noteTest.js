@@ -5,7 +5,7 @@ describe("Note",function(){
         console.log(assert.isEqual(note.returnText(), 'hello'));
     });
 
-    it("Does not returns text. ",function(){
+    it("does not returns text ",function(){
         note.createNote('not hello');
         console.log(assert.isNotEqual(note.returnText(), 'hello'));
     });
@@ -16,4 +16,3 @@ describe("Note",function(){
         console.log(assert.isEqual(note.returnAbbreviatedText(), 'Hello my name is Ree'));
     })
 });
-
