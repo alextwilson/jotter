@@ -31,7 +31,7 @@ describe("Testing the Jotter object.", function(){
 
 			jotter.addNote(note);
 			jotter.addNote(note2);
-			
+
 			console.log(assert.includesObject(jotter.displayList, note));
 			console.log(assert.includesObject(jotter.displayList, note2));
 		});
@@ -41,21 +41,4 @@ describe("Testing the Jotter object.", function(){
 			var note = new Note();
 			console.log(assert.notIncludesObject(jotter.displayList, note));
 		});
-		
-
-		// it("List contains notes.", function(){
-		// 	var jotter = new Jotter();
-		// 	var note = new Note();
-		// 	var note2 = new Note();
-
-		// 	note.createNote('hello');
-		// 	note2.createNote('hello2');
-
-		// 	jotter.addNote(note);
-		// 	jotter.addNote(note2);
-			
-		// 	console.log(assert.includesObject(jotter.displayList, [note, note2]));
-		// });
-		
-
 });
