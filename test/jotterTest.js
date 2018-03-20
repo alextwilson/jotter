@@ -1,8 +1,17 @@
 describe("Testing the Jotter object.", function(){
 		it("Tests whether the Jotters list is empty or not.", function(){
 			var jotter = new Jotter();
-			console.log(assert.isEmpty(jotter.displayList));
+			console.log(assert.isEmptyArray(jotter.displayList));
 		});
+
+		it("Tests whether the Jotters list is not empty after adding a note.", function(){
+			var jotter = new Jotter();
+			var note = new Note();
+			note.createNote('hello');
+			jotter.addNote(note);
+			console.log(assert.isNotEmptyArray(jotter.displayList));
+		});
+
 
 		it("List contains note.", function(){
 			var jotter = new Jotter();
